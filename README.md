@@ -38,7 +38,6 @@ Diagnostic interfaces
 
 Currently tested with:
 
-* GM MDI2 + Tech2Win
 * MDI2 / J2534-compatible interfaces
 
 Additional interfaces may work but have not been fully tested.
@@ -93,35 +92,9 @@ Download the latest version from:
 
 GitHub Releases
 
-Changelog
-
-v1.0.2
-
-* Added Disable All function
-
-v1.0.1
-
-* Added automatic update functionality
-* Updated application icon
-
-v1.0.0
-
-* Initial beta release
-
 Contributing
 
 If you test the application on a Saab 9-3 NG, feedback is welcome.
-
-Please include:
-
-* Model year
-* Body style
-* Module configuration
-* Diagnostic interface used
-* Operation performed
-* Result
-* Any error codes or unexpected behavior
-
 Credits
 
 Developed for the Saab 9-3 NG community.
