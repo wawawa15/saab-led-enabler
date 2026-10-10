@@ -86,8 +86,6 @@ Use it at your own risk. The author is not responsible for damage to vehicle mod
 
 Always maintain a stable vehicle battery voltage during programming.
 
-Releases
-
 Download the latest version from:
 
 GitHub Releases
