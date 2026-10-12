@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Saab93NGLedEnabler</AssemblyName>
+    <RootNamespace>SaabDidTool</RootNamespace>
+    <Product>Saab 93 NG Led Enabler</Product>
+    <AssemblyTitle>Saab 93 NG Led Enabler</AssemblyTitle>
+    <Company>BCR Auto</Company>
+    <Authors>BCR Auto</Authors>
+    <PlatformTarget>x86</PlatformTarget>
+    <Version>1.0.5</Version>
+    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <FileVersion>1.0.5.0</FileVersion>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\app.ico" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Inno Setup's default "Output" folder, and any other build output
+         folders, must never be compiled as source - if they contain a
+         duplicate copy of the project (e.g. from a prior extraction),
+         every class ends up defined twice. -->
+    <Compile Remove="OfflineTests\**\*.cs" />
+    <Compile Remove="OfflineTests/**/*.cs" />
+    <Compile Remove="Output\**" />
+    <Compile Remove="publish\**" />
+    <Compile Remove="InstallerOutput\**" />
+    <Compile Remove="bin\**" />
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="Output\**" />
+    <None Remove="Output\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
